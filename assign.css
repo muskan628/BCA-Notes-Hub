@@ -274,3 +274,19 @@ footer{
 .note-card:nth-child(3) { background: linear-gradient(135deg, #f6d365, #fda085); }
 .note-card:nth-child(4) { background: linear-gradient(135deg, #fc5c7d, #6a82fb); }
 
+.download-btn {
+    background-color: transparent; 
+    color: white; /* White text */
+    border: 2px double; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1rem;
+    transition: 0.3s; /* Smooth hover effect */
+}
+
+.download-btn:hover {
+    background-color: #4b286b; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
