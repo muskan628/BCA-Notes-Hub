@@ -1,0 +1,276 @@
+body {
+    /* font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0; */
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+#a1{
+    /* background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+    padding: 3vh 2vw;
+    font-size: 1.3rem; */
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    padding: 3vh 2vw;
+    font-size: 1.3rem;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+#a1 h2 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+#a1 h4 {
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+#a3{
+    background: linear-gradient(135deg, #798bb5, #b1ccc2);
+    color: white;
+    padding: 2vh;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+#a2{
+   /* border: 2px solid cadetblue;
+   height: 70vh;
+   /* width: 99.6vw; */
+   /* background-size:  99.3vw 70vh; */ 
+   /* border: 2px solid cadetblue;
+    height: 60vh;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;*/
+    border: 3px solid #4b6cb7;
+  height: 60vh;
+  width: 90%;
+  max-width: 1200px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out;
+} 
+#a2:hover {
+  transform: scale(1.02);
+}
+#a4{
+    /* height: 8vh; */
+    /* border: 2px solid black; */
+    height: auto;
+    min-height: 6vh;
+}
+#a5{
+    font-size: 2rem;
+    color: #4b6cb7;
+    text-align: center;
+    font-weight: bold;
+}
+.a6{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    /* gap: 20px; Cards ke beech spacing
+    padding: 20px; */
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.a7{
+    
+    /* background-size:370px 350px ;
+    height: 350px;
+    width: 360px;
+    border: 2px solid black;
+    margin-top: 5vh;
+    transition: transform 0.3s ease-in-out; */
+    position: relative;
+  height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.a7:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+  
+}
+
+.a6 a:nth-child(1) .a7 { background: linear-gradient(135deg, #541b5f, #468af0); }
+.a6 a:nth-child(2) .a7 { background: linear-gradient(135deg, #180832, #19c99a89); color:#222; }
+.a6 a:nth-child(3) .a7 { background: linear-gradient(135deg, #280b3f, #488ff3); }
+
+
+
+/* Label Overlay */
+.card-label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+/* Card Icon */
+.a7 .icon {
+  font-size: 9rem;
+  margin-bottom: 15px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.a7:hover .card-label {
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+/* #stat{
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+    color: plum;
+    margin-top: 2vh;
+}
+#stat1{
+    font-size: 2.2rem;
+    text-align: left;
+    color: rgb(8, 8, 8);
+    
+}
+#stat2{
+    font-size: 1.7rem;
+    margin-bottom: 2vh;
+} */
+footer{
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    text-align: right;
+   padding:1rem;
+    margin-top: 8vh;
+    font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  box-shadow: 0px -4px 10px rgba(0,0,0,0.2);
+}
+
+/* .dark {
+    background-color: #121212;
+    color: white;
+  } */
+
+/* Responsive */
+@media (max-width: 768px) {
+  #a1 h2 { font-size: 1.8rem; }
+  #a1 h4 { font-size: 1rem; }
+  #a2 { height: 40vh; }
+}
+@media (max-width: 480px) {
+  #a1 h2 { font-size: 1.5rem; }
+  #a3 { font-size: 0.9rem; }
+  #a2 { height: 30vh; width: 95%; }
+}
+/* Card Label Overlay */
+.card-label {
+   position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s;
+}
+.a7:hover .card-label {
+  background: linear-gradient(to top, rgba(75,108,183,0.9), transparent);
+}
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  #a2 { height: 40vh; }
+  #a5 { font-size: 1.8rem; }
+}
+@media (max-width: 480px) {
+  #a2 { height: 30vh; width: 95%; }
+  #a5 { font-size: 1.5rem; }
+  .a7 { height: 200px; font-size: 1.1rem; }
+}
+
+/* Notes Section */
+.notes-container {
+  max-width: 900px;
+  margin: 5vh auto;
+  display: grid;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+.note-card {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  border-radius: 14px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.note-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.note-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+  /* border:2px solid transparent;
+  background: linear-gradient(150deg, #667eea,#43e97b, #e1b31a,#d92d50); */
+}
+.note-title:hover {
+  color: #ffe082;
+}
+
+.note-details {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 1.1rem;
+}
+.note-details li {
+  margin-bottom: 6px;
+  list-style: "🔹 ";
+}
+
+/* Different gradient for each card */
+.note-card:nth-child(1) { background: linear-gradient(135deg, #667eea, #764ba2); }
+.note-card:nth-child(2) { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+.note-card:nth-child(3) { background: linear-gradient(135deg, #f6d365, #fda085); }
+.note-card:nth-child(4) { background: linear-gradient(135deg, #fc5c7d, #6a82fb); }
+
